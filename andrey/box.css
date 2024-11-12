@@ -1,0 +1,11 @@
+body{
+    background-color: rgba(254, 254, 254, 0.9);
+    background-image: url(https://i.pinimg.com/236x/06/3a/b2/063ab25bbfbeb2e28491d39c47a50874.jpg);
+
+    background-repeat: repeat-x;
+}
+
+p{
+    color: rgb(0, 0, 0,0.7);
+    
+}

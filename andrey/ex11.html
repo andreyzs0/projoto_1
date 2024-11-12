@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercico de string</title>
+</head>
+<body>
+    
+    <h2>Digite seu nome</h2>
+    <input type="text" id="nameInput">
+    <button id="greetbutton">saudar</button>
+
+    <p id="greeting"></p>
+
+    <script>
+        document.getElementById('greetButton').onclick = function() {
+            let userName = document.getElementById('nameInput').value;
+            let greeting ="olá," + userName + "! Seja bem-vindo(a)!";
+
+            document.getElementById('greeting').innerText = greeting;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Digite sua comida favorita</h2>
+    <input type="text" id="foodInput">
+    <button id="checkFoodButton">verificar</button>
+
+    <p id="Foodresponse"></p>
+
+    <script>
+        document.getElementById('checkFoodButton').onclick = function() {
+            let favoritefood = document.getElementById('foodInput').value;
+
+            if (favoritefood === "") {
+                favoritefood = null; // se o campo estiver vazio,favoritefood será null
+            }
+
+            document.getElementById('foodResponse').innerText = "Sua comida favorita é: " + favoriteFood;
+        }
+    </script>
+</body>
+</html>

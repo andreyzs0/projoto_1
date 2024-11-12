@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>voce gosta de programção</h2>
+    <button id="yesbutton">sim</button>
+    <button id="nobutton">não</button>
+
+    <p id="resposta"> </p>
+
+    <script>
+        document.getElementById('yesbutton').onclick =function(){
+            let gostoprogramação =  true;
+            document.getElementById('resposta').innerText = "voce respondeu" + gostoprogramação;
+        }
+
+        document.getElementById('nobutton').onclick = function(){
+            let gostoprogramação =  false
+            document.getElementById('resposta').innerText = "voce respondeu" + gostoprogramação;
+        }
+    </script>
+</body>
+</html>
